@@ -32,6 +32,9 @@
 
 * លក្ខខណ្ឌឈ្នះ៖
  ហ្គេមបញ្ចប់នៅពេលដែលអ្នកលេង ឬ AI មានសន្លឹកបៀទាំងអស់នៅក្នុងដៃបង្កើតជាគូត្រឹមត្រូវ។
+
+![iphone6 7](https://github.com/user-attachments/assets/726e322d-0dd8-483e-a5d5-d9c62e64669a)
+
 * Card Pairing Rules:
 - Numbered Cards (A-9): A pair is formed if the sum of two cards equals 10. For example:
    => A  + 9 = 10
