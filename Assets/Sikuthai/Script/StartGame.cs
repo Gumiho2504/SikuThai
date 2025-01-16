@@ -10,8 +10,8 @@ public class StartGame : MonoBehaviour
     {
        while(progress < 100)
         {
-            progress += 50 * Time.deltaTime;
-            loadingText.text = "game comming . " + progress.ToString("00") + "%";
+            progress +=90 * Time.deltaTime;
+            loadingText.text = "game comming . " + progress.ToString("0") + "%";
             yield return null;
         }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
