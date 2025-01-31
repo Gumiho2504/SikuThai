@@ -7,14 +7,14 @@ public class Card : MonoBehaviour
     public string suit;
     public string rank;
     public bool s = false;
-    
+
 
     private void OnMouseDown()
     {
-        // Reference the selected card in the game controller
+
         SikuThiaGameController.instance.playerCardDrop = this;
         string parentName = gameObject.transform.parent.name;
-        //print(parentName);
+
 
         // Toggle selection state
         s = !s;
