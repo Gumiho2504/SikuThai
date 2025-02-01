@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49293
+51644
 -job-worker-count
 3
 -background-job-worker-count
@@ -66,16 +66,16 @@ Successfully changed project path to: /Users/rose/Documents/UnityGame/10/SikuTha
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8545780288]  Target information:
+Player connection [8370389568]  Target information:
 
-Player connection [8545780288]  * "[IP] 192.168.0.116 [Port] 0 [Flags] 2 [Guid] 3323468796 [EditorId] 3323468796 [Version] 1048832 [Id] OSXEditor(0,roses-Mac-mini-3.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8370389568]  * "[IP] 192.168.0.113 [Port] 0 [Flags] 2 [Guid] 570696751 [EditorId] 570696751 [Version] 1048832 [Id] OSXEditor(0,roses-Mac-mini-3.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8545780288] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [8545780288] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8370389568] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8370389568] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 Library Redirect Path: Library/
 [PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-Refreshing native plugins compatible for Editor in 11.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 18.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.12f1 (7defd84cdab8)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -90,53 +90,53 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56543
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56374
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.12f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.12f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.12f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.005311 seconds.
-- Loaded All Assemblies, in  0.318 seconds
+Registered in 0.018706 seconds.
+- Loaded All Assemblies, in  0.373 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 232 ms
+Android Extension - Scanning For ADB Devices 80 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.652 seconds
-Domain Reload Profiling: 970ms
-	BeginReloadAssembly (100ms)
+- Finished resetting the current domain, in  0.564 seconds
+Domain Reload Profiling: 937ms
+	BeginReloadAssembly (130ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (138ms)
-		LoadAssemblies (101ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (133ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (133ms)
 			TypeCache.Refresh (132ms)
 				TypeCache.ScanAssembly (121ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (653ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (564ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (607ms)
+		SetupLoadedEditorAssemblies (529ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (383ms)
+			InitializePlatformSupportModulesInManaged (321ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (72ms)
-			ProcessInitializeOnLoadMethodAttributes (146ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (73ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -146,13 +146,13 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.543 seconds
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.610 seconds
+Refreshing native plugins compatible for Editor in 21.10 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
 Mono: successfully reloaded assembly
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -161,55 +161,2528 @@ Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.637 seconds
-Domain Reload Profiling: 2176ms
-	BeginReloadAssembly (621ms)
+- Finished resetting the current domain, in  0.832 seconds
+Domain Reload Profiling: 2438ms
+	BeginReloadAssembly (840ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
+		CreateAndSetChildDomain (47ms)
 	RebuildCommonClasses (27ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (858ms)
-		LoadAssemblies (578ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (701ms)
+		LoadAssemblies (465ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (314ms)
-			TypeCache.Refresh (236ms)
-				TypeCache.ScanAssembly (205ms)
-			BuildScriptInfoCaches (73ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (637ms)
+		AnalyzeDomain (278ms)
+			TypeCache.Refresh (207ms)
+				TypeCache.ScanAssembly (172ms)
+			BuildScriptInfoCaches (63ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (833ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (469ms)
+		SetupLoadedEditorAssemblies (649ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (38ms)
-			ProcessInitializeOnLoadAttributes (266ms)
-			ProcessInitializeOnLoadMethodAttributes (139ms)
+			InitializePlatformSupportModulesInManaged (113ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (345ms)
+			ProcessInitializeOnLoadMethodAttributes (148ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5772 unused Assets / (1.2 MB). Loaded Objects now: 6365.
-Memory consumption went from 118.4 MB to 117.2 MB.
-Total: 8.911792 ms (FindLiveObjects: 0.331708 ms CreateObjectMapping: 0.205250 ms MarkObjects: 7.325250 ms  DeleteObjects: 1.049000 ms)
+Unloading 5866 unused Assets / (0.7 MB). Loaded Objects now: 6449.
+Memory consumption went from 119.4 MB to 118.7 MB.
+Total: 9.351208 ms (FindLiveObjects: 1.384000 ms CreateObjectMapping: 0.312958 ms MarkObjects: 6.356709 ms  DeleteObjects: 1.297042 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9324.767589 seconds.
+  path: Assets/FacebookSDK/SDK/Resources/FacebookSettings.asset
+  artifactKey: Guid(d20c69214e21446b5a5f0b26811c4ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Resources/FacebookSettings.asset using Guid(d20c69214e21446b5a5f0b26811c4ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '96f17a9b61e86ed7f23bdb2401598253') in 0.035492291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/InputSystem_Actions.inputactions
+  artifactKey: Guid(abfc50568cd094ab2a57f0b3510d3384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InputSystem_Actions.inputactions using Guid(abfc50568cd094ab2a57f0b3510d3384) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'c7602d31fbd04f81544b47fac7616950') in 0.02783 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.632550 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentUpdater.swift
+  artifactKey: Guid(aa01d6bdb7c7f4c52bf29c7adbee61fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentUpdater.swift using Guid(aa01d6bdb7c7f4c52bf29c7adbee61fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: '3301813435ce5d1080626c5977b241c2') in 0.011911 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentUpdater.swift' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004542 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/AccessTokenMenu.unity
+  artifactKey: Guid(67cb5b2387b8e4ec9b2fa69ad9510e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/AccessTokenMenu.unity using Guid(67cb5b2387b8e4ec9b2fa69ad9510e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1d5e4afcc8315aefa1c7aabcf6fd8a93') in 0.000278417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000848 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/zlib1.dll
+  artifactKey: Guid(0cf6ec435de3c4d82a13e92a46c236d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/zlib1.dll using Guid(0cf6ec435de3c4d82a13e92a46c236d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '398cd32a9ea52cf9d8881c6e21dd6fed') in 0.00018025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000980 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/METADATA.bzl
+  artifactKey: Guid(60df6f13bbf1642c2b8114b11a812e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/METADATA.bzl using Guid(60df6f13bbf1642c2b8114b11a812e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'cfabefdad8540c2c2c77370eb09749bb') in 0.003575708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001220 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/LogView.cs
+  artifactKey: Guid(910cbe16250cb4363b70464c39fc701a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/LogView.cs using Guid(910cbe16250cb4363b70464c39fc701a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '4bed416f2442d94283a6549a06e75050') in 0.000250667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000826 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/cpprest_2_10.dll
+  artifactKey: Guid(c651c1681c6f348208cb85e894ccdfaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/cpprest_2_10.dll using Guid(c651c1681c6f348208cb85e894ccdfaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '671eb6356bdccef5893970a13cf60f01') in 0.000205583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000789 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Scripts/Menu.cs
+  artifactKey: Guid(1533c3c1ab7624d62b7ed5f9088e86bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Scripts/Menu.cs using Guid(1533c3c1ab7624d62b7ed5f9088e86bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5ec814a6a19aff44e918f109ff4f2a19') in 0.000183417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000737 seconds.
+  path: Assets/FacebookSDK/Plugins/Canvas/CanvasJSSDKBindings.jslib
+  artifactKey: Guid(082cd93ddb11e4437b52ea3d121816d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Canvas/CanvasJSSDKBindings.jslib using Guid(082cd93ddb11e4437b52ea3d121816d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: '0d5f8bf0a382c81f3e5c55cb2f034f10') in 0.000712875 seconds
+  ERROR: Import of 'Assets/FacebookSDK/Plugins/Canvas/CanvasJSSDKBindings.jslib' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001134 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/LogView.unity
+  artifactKey: Guid(c07ff0bf6bea74c2eb681ac0cae44265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/LogView.unity using Guid(c07ff0bf6bea74c2eb681ac0cae44265) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd176430c5358d9bdb064c0d8cf7c5d44') in 0.000239583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002019 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/HorizontalLayoutGroup.cs
+  artifactKey: Guid(30649d3a9faa99c48a7b1166b86bf2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/HorizontalLayoutGroup.cs using Guid(30649d3a9faa99c48a7b1166b86bf2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '6e8a6d75f91c990c58da2b938c738cd4') in 0.001479792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000853 seconds.
+  path: Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.mdb
+  artifactKey: Guid(3aa17cd5f43042a1a7381759dc1258a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.mdb using Guid(3aa17cd5f43042a1a7381759dc1258a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'a43c21be760d30771d32d5739bec7b86') in 0.000491041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000821 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsADSManager.cs
+  artifactKey: Guid(67f2f22b10b98134995830e8bee86439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsADSManager.cs using Guid(67f2f22b10b98134995830e8bee86439) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8b8e366a5f4ce2ae94031c29489b51e6') in 0.000150875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000898 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsFriendsManager.cs
+  artifactKey: Guid(cdcf7065d5dd5214c8e6b1088e8d7dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsFriendsManager.cs using Guid(cdcf7065d5dd5214c8e6b1088e8d7dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '633fe6cfdeac76085c4559bcf2604284') in 0.00034075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001047 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/ScrollRect.cs
+  artifactKey: Guid(1aa08ab6e0800fa44ae55d278d1423e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/ScrollRect.cs using Guid(1aa08ab6e0800fa44ae55d278d1423e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'fc6678004b378ffb95c46a19c182047b') in 0.000206666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000737 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/VerticalLayoutGroup.cs
+  artifactKey: Guid(59f8146938fff824cb5fd77236b75775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/VerticalLayoutGroup.cs using Guid(59f8146938fff824cb5fd77236b75775) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '514195cddbb7ddd3d591fd6947c7968c') in 0.00014325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000965 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Music/the-epic-2-by-rafael-krux.mp3
+  artifactKey: Guid(2f433644f2a2d4e839bd2ef3d2a7b476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Music/the-epic-2-by-rafael-krux.mp3 using Guid(2f433644f2a2d4e839bd2ef3d2a7b476) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ae8ce0a5cae181d893d6ecc971420f53') in 0.579173375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/AppEvents.unity
+  artifactKey: Guid(68ab940fa15e34433bff18301686b080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/AppEvents.unity using Guid(68ab940fa15e34433bff18301686b080) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '826b8ade54cb8f8559810aa572020878') in 0.000419541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001550 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h
+  artifactKey: Guid(66952bdb75cae4c348f3d0521da59bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h using Guid(66952bdb75cae4c348f3d0521da59bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: 'dc2520f04bea3f999316f725409cf204') in 0.000939583 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001680 seconds.
+  path: Assets/ExternalDependencyManager/Editor/1.2.166/Google.VersionHandlerImpl.dll
+  artifactKey: Guid(ac01a37c65d7d43f186c6b8ca67799f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/1.2.166/Google.VersionHandlerImpl.dll using Guid(ac01a37c65d7d43f186c6b8ca67799f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd63875bb761af9b214593c34e7fb5f50') in 0.000166042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000646 seconds.
+  path: Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll
+  artifactKey: Guid(bb6999c8a5ce4ba99688ec579babe5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll using Guid(bb6999c8a5ce4ba99688ec579babe5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd7e70dbe31747cf16304e3a0f8be22fc') in 0.000143292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001465 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/GraphRequest.cs
+  artifactKey: Guid(23c3cb06c2209474e9a8441e2712d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/GraphRequest.cs using Guid(23c3cb06c2209474e9a8441e2712d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '35da8e2f9a3e2a5ec1a540cf369aa572') in 0.000159583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000699 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/TournamentsMenu.cs
+  artifactKey: Guid(4ad38019c04d54713a79b19e9b246a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/TournamentsMenu.cs using Guid(4ad38019c04d54713a79b19e9b246a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5baf12f12ddeec9ddbd6a65f7963bfea') in 0.000157125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000731 seconds.
+  path: Assets/FacebookSDK/Examples/InputSystemWarning.cs
+  artifactKey: Guid(cc23d36722b109748ab140e5516e57f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/InputSystemWarning.cs using Guid(cc23d36722b109748ab140e5516e57f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '17fa926179835ed73d31778bcad89d65') in 0.000122833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000707 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/XInputInterface.dll
+  artifactKey: Guid(60bb5ceb2a9084f4fa94352a8ba41fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/XInputInterface.dll using Guid(60bb5ceb2a9084f4fa94352a8ba41fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ca38f36ffdbe85f1f77bea76bb2e3baa') in 0.000134375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001440 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Scripts/Utility.cs
+  artifactKey: Guid(741519083c2d049a7a7116fa192892e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Scripts/Utility.cs using Guid(741519083c2d049a7a7116fa192892e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '2af237f200895e5780af609c8755c275') in 0.000136625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000906 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Prefabs/PurchaseRowPrefab.prefab
+  artifactKey: Guid(43804ee08a8b34e12b7fa666fd586774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Prefabs/PurchaseRowPrefab.prefab using Guid(43804ee08a8b34e12b7fa666fd586774) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '693706f3a2c7b2ab94716723151dc9d6') in 0.016904375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 41
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000748 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods
+  artifactKey: Guid(aead30834362b490ea67fdd7fd0351c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods using Guid(aead30834362b490ea67fdd7fd0351c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1704f4d3c8249c1d4ccccb5eed704e67') in 0.000395708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000656 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsLoginManager.cs
+  artifactKey: Guid(3bd31f5b4e50e1f4ebd23bab7e8dc57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsLoginManager.cs using Guid(3bd31f5b4e50e1f4ebd23bab7e8dc57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'cf014c8666c4bed1e0e2dfe608f971ea') in 0.000174833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000796 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/libssl-3.dll
+  artifactKey: Guid(2c674e72034d74f6db7fa52e52d25b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/libssl-3.dll using Guid(2c674e72034d74f6db7fa52e52d25b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ded5ae8e0ffd2cc051967184e5467d4b') in 0.000130333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001172 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/LibFBGUI.dll
+  artifactKey: Guid(7511989cae530409694b01d0689ab3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/LibFBGUI.dll using Guid(7511989cae530409694b01d0689ab3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '64a9038f562668a9e2851b92b295b0f4') in 0.000160292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000799 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Subscription.unity
+  artifactKey: Guid(4ad37b3bb7e634d2eaa15a73b923b09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Subscription.unity using Guid(4ad37b3bb7e634d2eaa15a73b923b09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '06cb69adfc0ef65a539eb883215042a8') in 0.000133208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000803 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/InputField.cs
+  artifactKey: Guid(d199490a83bb2b844b9695cbf13b01ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/InputField.cs using Guid(d199490a83bb2b844b9695cbf13b01ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '37e2de0c672f6d1dcd555f0271895818') in 0.000138917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001006 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Image.cs
+  artifactKey: Guid(fe87c0e1cc204ed48ad3b37840f39efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Image.cs using Guid(fe87c0e1cc204ed48ad3b37840f39efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '03621098e0baa56c4c7e9096ec9c3442') in 0.000130583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000643 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/METADATA.bzl
+  artifactKey: Guid(0caa850c290704435b044d096c5c4437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/METADATA.bzl using Guid(0caa850c290704435b044d096c5c4437) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8881b8bc92729c1d120a3a7689670916') in 0.000321666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000657 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h
+  artifactKey: Guid(511e95bcdad89425999ccbb3e315246a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h using Guid(511e95bcdad89425999ccbb3e315246a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: '6b648eb43e53de638432813236a32824') in 0.000677334 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001174 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Sprites/folder.png
+  artifactKey: Guid(340f516ff37dc4abb9aa344626c70981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Sprites/folder.png using Guid(340f516ff37dc4abb9aa344626c70981) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '37d455334b33a4ac368f2515548217b9') in 0.021333541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000902 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Sprites/cog.png
+  artifactKey: Guid(add552b6deef24dbc84ebcb5f8091d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Sprites/cog.png using Guid(add552b6deef24dbc84ebcb5f8091d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '7abd4a4dae69f8ce8d5f94f0452dea08') in 0.004929333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000844 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/Pay.cs
+  artifactKey: Guid(7f08c9721703046ec883e57562184726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/Pay.cs using Guid(7f08c9721703046ec883e57562184726) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5d4333dc8315fb13ef6bf656e25f7df7') in 0.0001805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000902 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Sprites/mute.png
+  artifactKey: Guid(680cf5f80b0f44e0e97a459174ac73a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Sprites/mute.png using Guid(680cf5f80b0f44e0e97a459174ac73a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '58cee37044df393b1b15cebcc9d9cf97') in 0.003955208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001275 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/GraphRequest.unity
+  artifactKey: Guid(444ae7ddf432b457a97bfe42021075e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/GraphRequest.unity using Guid(444ae7ddf432b457a97bfe42021075e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '46ddc888cd57034d52ea750d40e44d22') in 0.000198958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000759 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsGraphAPIManager.cs
+  artifactKey: Guid(f7c6c79221d642a49a2d6c7008efb024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsGraphAPIManager.cs using Guid(f7c6c79221d642a49a2d6c7008efb024) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f44261aefd3a376ed49188f1c297def2') in 0.000167334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000704 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsPhysicalGamepadManager.cs
+  artifactKey: Guid(9182b148f48517f4d969163211f36b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsPhysicalGamepadManager.cs using Guid(9182b148f48517f4d969163211f36b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'b9118e3b47f3fc4df3d31dd04d78d10e') in 0.000150625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001001 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Prefabs/ProductRowPrefab.prefab
+  artifactKey: Guid(6966b93684c434b41b2fb6dcce89caa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Prefabs/ProductRowPrefab.prefab using Guid(6966b93684c434b41b2fb6dcce89caa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '72ee75f3da122ef24dc666616867f5c0') in 0.001968125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000999 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsShareManager.cs
+  artifactKey: Guid(6d2b9aa5c2a660f4394334fa45fc34cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsShareManager.cs using Guid(6d2b9aa5c2a660f4394334fa45fc34cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'a1c82fce77fb7a382c041fae5b4eeff4') in 0.000173125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000726 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Sprites/delete.png
+  artifactKey: Guid(60c5bc5048eeb45a5b648589f88e8c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Sprites/delete.png using Guid(60c5bc5048eeb45a5b648589f88e8c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '15826020127ae338ff860828dcde6ffa') in 0.004109834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000783 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/LibFBGPlatform.dll
+  artifactKey: Guid(847298e9708154efc911952d510b6dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/LibFBGPlatform.dll using Guid(847298e9708154efc911952d510b6dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '79971b42e154961c77e775fe79538af2') in 0.000153 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000819 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/libcurl.dll
+  artifactKey: Guid(7a5cdbf95b73d40c3961ccc4ee0f320a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/libcurl.dll using Guid(7a5cdbf95b73d40c3961ccc4ee0f320a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f7982e04ec95548d143ae37b62f74110') in 0.000147791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000724 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/LibFBGPlatform.dll
+  artifactKey: Guid(43295463941dc47b68ebc033bc3b97a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/LibFBGPlatform.dll using Guid(43295463941dc47b68ebc033bc3b97a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '6d9efce1d3b7e7dc576f7a7e1b1e08aa') in 0.000137125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000826 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsTournamentsManager.cs
+  artifactKey: Guid(a04a3f841e0a748058e520e5cddc969a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsTournamentsManager.cs using Guid(a04a3f841e0a748058e520e5cddc969a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '9e994495d1cc86b679f8e1870f311da6') in 0.000139167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000905 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Scripts/LogScroller.cs
+  artifactKey: Guid(bd18f8ae8b6af4dc68f7c88319ee024b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Scripts/LogScroller.cs using Guid(bd18f8ae8b6af4dc68f7c88319ee024b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'df671a8a595fd6b5d80c35cbe160b1a2') in 0.000127125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001121 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Sprites/volume-max.png
+  artifactKey: Guid(9f7e3b5686c924b8aa7ced06fd49d3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Sprites/volume-max.png using Guid(9f7e3b5686c924b8aa7ced06fd49d3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '6c9cea1482dd420f6d5605801692a8f1') in 0.005592875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001128 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/ContentSizeFitter.cs
+  artifactKey: Guid(3245ec927659c4140ac4f8d17403cc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/ContentSizeFitter.cs using Guid(3245ec927659c4140ac4f8d17403cc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'bfafcf085355503e3cc4df5e70bd0bdd') in 0.000196958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001022 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/XInputDotNetPure.dll
+  artifactKey: Guid(bb8fba510a20562428ce21dcfe1f9689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/XInputDotNetPure.dll using Guid(bb8fba510a20562428ce21dcfe1f9689) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '4a8d3a77db48841d1677a32a9d988b65') in 0.000142167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000886 seconds.
+  path: Assets/StreamingAssets/meta-logo.png
+  artifactKey: Guid(0d21613618d660742a8799bee37104d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/meta-logo.png using Guid(0d21613618d660742a8799bee37104d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '98a1fdc2c0ed0db363bd901e09e93004') in 0.000324375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000912 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Prefabs/ProductRowPrefab.cs
+  artifactKey: Guid(d5a426e03015442f1864eb0e805eda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Prefabs/ProductRowPrefab.cs using Guid(d5a426e03015442f1864eb0e805eda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '77672c6064592d98f806e17e9e0d6c94') in 0.000146208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001050 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h
+  artifactKey: Guid(b4469d6625a664618b68231ee0dcc093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h using Guid(b4469d6625a664618b68231ee0dcc093) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: '9be897f26ef7d3ce03f3f002168f64c5') in 0.000767208 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001078 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/DialogShare.unity
+  artifactKey: Guid(190c345841ecc464e9a122f04369757e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/DialogShare.unity using Guid(190c345841ecc464e9a122f04369757e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '981ae3c9299c86b920974d2a3a8b31ee') in 0.000115833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000637 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsPurchaseManager.cs
+  artifactKey: Guid(75adb6f2e516703489df2362d990ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsPurchaseManager.cs using Guid(75adb6f2e516703489df2362d990ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8f2a7ffdb20380f18af3df1057e489f1') in 0.00013025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000787 seconds.
+  path: Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-17.0.0.aar
+  artifactKey: Guid(bda855210f1f344978a21514004034a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-17.0.0.aar using Guid(bda855210f1f344978a21514004034a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: '13f3f816b27dcb316f9cfea23fb98ad3') in 0.0007605 seconds
+  ERROR: Import of 'Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-17.0.0.aar' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001239 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/CanvasScaler.cs
+  artifactKey: Guid(0cd44c1031e13a943bb63640046fad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/CanvasScaler.cs using Guid(0cd44c1031e13a943bb63640046fad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f359b7e3bf04e058aa44b0a073bc3592') in 0.000144666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000734 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/LibFBGUI.dll
+  artifactKey: Guid(ff7c662d891d4441a8527588d3080f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/LibFBGUI.dll using Guid(ff7c662d891d4441a8527588d3080f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '9325bbd072b7bac1e20aa861c6cb45c8') in 0.000114166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000656 seconds.
+  path: Assets/ExternalDependencyManager/Editor/1.2.166/Google.JarResolver.dll.mdb
+  artifactKey: Guid(b55da2c2df7774114851bead1af94aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/1.2.166/Google.JarResolver.dll.mdb using Guid(b55da2c2df7774114851bead1af94aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '173e411b03d11756808336ff48b8fded') in 0.00030525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000864 seconds.
+  path: Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset
+  artifactKey: Guid(4cee8bca36f2ab74b8feb832747fa6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset using Guid(4cee8bca36f2ab74b8feb832747fa6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '7d1f7d752a9bfb01b3e4673811f39360') in 0.001205083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000917 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Mask.cs
+  artifactKey: Guid(31a19414c41e5ae4aae2af33fee712f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Mask.cs using Guid(31a19414c41e5ae4aae2af33fee712f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'bf2215211f2dc2ef25e7e99bbe2df330') in 0.000144542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000731 seconds.
+  path: Assets/ExternalDependencyManager/Editor/1.2.166/Google.IOSResolver.dll
+  artifactKey: Guid(6454b8455845644b6a7c06a56961be70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/1.2.166/Google.IOSResolver.dll using Guid(6454b8455845644b6a7c06a56961be70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'afaf0007807b969879beb1bf478d12b5') in 0.000138416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000964 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/Subscription.cs
+  artifactKey: Guid(f7d5ab9d4565843d893f8f2343fe39bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/Subscription.cs using Guid(f7d5ab9d4565843d893f8f2343fe39bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f420d39eeeff771cd3c9eb7fa8d1f83f') in 0.000122083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001193 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/RawImage.cs
+  artifactKey: Guid(1344c3c82d62a2a41a3576d8abb8e3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/RawImage.cs using Guid(1344c3c82d62a2a41a3576d8abb8e3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5cc67c489af0e854187eb73e69f23fb8') in 0.000146208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000836 seconds.
+  path: Assets/ExternalDependencyManager/Editor/1.2.166/Google.JarResolver.dll
+  artifactKey: Guid(827a09b4f97e545628f537b3c45ce260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/1.2.166/Google.JarResolver.dll using Guid(827a09b4f97e545628f537b3c45ce260) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ea38d44f806ca29add102b151706c24a') in 0.000116167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000709 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/AppRequests.cs
+  artifactKey: Guid(3b4c675f81a254b87adc8ad01006c580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/AppRequests.cs using Guid(3b4c675f81a254b87adc8ad01006c580) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '117d9e9e480f049f80987a29dcd8ecf7') in 0.000129875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000870 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsSoftKeyboardManager.cs
+  artifactKey: Guid(f44675a5bb5ab2140bf25f5abc67dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsSoftKeyboardManager.cs using Guid(f44675a5bb5ab2140bf25f5abc67dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '4ed8bffda8401f4fea585792390888f7') in 0.000116792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000764 seconds.
+  path: Assets/ExternalDependencyManager/Editor/1.2.166/Google.PackageManagerResolver.dll
+  artifactKey: Guid(cf30e33fa959c47989a4520443c53877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/1.2.166/Google.PackageManagerResolver.dll using Guid(cf30e33fa959c47989a4520443c53877) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'c2d86597ffa03444116891de919bd556') in 0.000117166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001058 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Button.cs
+  artifactKey: Guid(4e29b1a8efbd4b44bb3f3716e73f07ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Button.cs using Guid(4e29b1a8efbd4b44bb3f3716e73f07ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5159d623973f684d5d525cbcdf80f2aa') in 0.000114208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000776 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/MenuBase.cs
+  artifactKey: Guid(8f28f9112a7d44d3c999fbd95333abbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/MenuBase.cs using Guid(8f28f9112a7d44d3c999fbd95333abbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1df3c4a282b5fdd985e9b4a8e3758496') in 0.00013025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000763 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/UIInputHelper.cs
+  artifactKey: Guid(a84a9100c67194dc8a9de6be34f02b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/UIInputHelper.cs using Guid(a84a9100c67194dc8a9de6be34f02b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ed1ab51e522254a4683e2e23fff0acb6') in 0.00011775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000594 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsLogsManager.cs
+  artifactKey: Guid(9f240dd53cc273847b9bbd76d0516894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsLogsManager.cs using Guid(9f240dd53cc273847b9bbd76d0516894) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '88b2ee36b826b88d7f55834a654b42c4') in 0.0001125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000636 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/tinyxml2.dll
+  artifactKey: Guid(503d1c1d1157d4e1fac07962d4a72953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/tinyxml2.dll using Guid(503d1c1d1157d4e1fac07962d4a72953) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5107220c1c1bcbaaa1ee219c81d84d8d') in 0.000106625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000625 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsA2UNotificationsManager.cs
+  artifactKey: Guid(a87b0532431cd8543ad24dba4f6553c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsA2UNotificationsManager.cs using Guid(a87b0532431cd8543ad24dba4f6553c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'eea475af6a6f609d7d9cb72591cc38ff') in 0.00012325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000736 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Sprites/box.png
+  artifactKey: Guid(a4bad31774d974484bf03b787388227c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Sprites/box.png using Guid(a4bad31774d974484bf03b787388227c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '3513767263a17215912f7be833c9b24b') in 0.004105958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000824 seconds.
+  path: Assets/ExternalDependencyManager/Editor/1.2.166/Google.IOSResolver.dll.mdb
+  artifactKey: Guid(d189c683c0d83473ab8c2918b9e5ee30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/1.2.166/Google.IOSResolver.dll.mdb using Guid(d189c683c0d83473ab8c2918b9e5ee30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'b936c96163bf8d41ffadca5cae9c8850') in 0.000286125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001112 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/GridLayoutGroup.cs
+  artifactKey: Guid(8a8695521f0d02e499659fee002a26c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/GridLayoutGroup.cs using Guid(8a8695521f0d02e499659fee002a26c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '29a6bca759e79d3c48e3e6f893488227') in 0.000148041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001056 seconds.
+  path: Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll
+  artifactKey: Guid(137a102f808364a0fb444bedefe2575d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll using Guid(137a102f808364a0fb444bedefe2575d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '46fab40d42e761c742a0c8e37d4a92e1') in 0.000125042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000912 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/libcurl.dll
+  artifactKey: Guid(c0074179c412c4538be77b083ada0125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/libcurl.dll using Guid(c0074179c412c4538be77b083ada0125) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '6a6fce4d152ce323d4ff3e4218879d14') in 0.000125875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001299 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Dropdown.cs
+  artifactKey: Guid(0d0b652f32a2cc243917e4028fa0f046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Dropdown.cs using Guid(0d0b652f32a2cc243917e4028fa0f046) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8f1669029bd6193d357af233050da507') in 0.00015025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000895 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/ConsoleBase.cs
+  artifactKey: Guid(e8659f5605d094c19a8b7ef9471c3603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/ConsoleBase.cs using Guid(e8659f5605d094c19a8b7ef9471c3603) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '93244f060f93d55a97c98506232d1548') in 0.000118417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000689 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/libssl-3-x64.dll
+  artifactKey: Guid(938b59dc6da1f431888cb2e05d85d3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/libssl-3-x64.dll using Guid(938b59dc6da1f431888cb2e05d85d3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '9f94711361e3779575826cee00bd7162') in 0.000122584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000706 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/Facebook.Unity.Windows.dll
+  artifactKey: Guid(1430182b1e5d64997aeda2070b4531c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/Facebook.Unity.Windows.dll using Guid(1430182b1e5d64997aeda2070b4531c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '753675c022b48bdc28e03b447b991469') in 0.000110625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000811 seconds.
+  path: Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.166_manifest.txt
+  artifactKey: Guid(70e37c0d68034f8a953638d978633f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.166_manifest.txt using Guid(70e37c0d68034f8a953638d978633f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '35724922c0f6c9609a2a023b654003ab') in 0.000650958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000669 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Scripts/UIState.cs
+  artifactKey: Guid(a81f52b5215b240a9b1444969f76d834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Scripts/UIState.cs using Guid(a81f52b5215b240a9b1444969f76d834) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'c962ec6efedbb32537c973134f3a41b3') in 0.000108291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000680 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/UploadToMediaLibrary.cs
+  artifactKey: Guid(62b5e01f04ca946c28e79eca12b9b44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/UploadToMediaLibrary.cs using Guid(62b5e01f04ca946c28e79eca12b9b44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '7f0797f360d3db4a8955bfbf4cd948e9') in 0.00011575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000630 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/MainMenu.unity
+  artifactKey: Guid(7c38a8c9adc9d5c4b869612e4033ead8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/MainMenu.unity using Guid(7c38a8c9adc9d5c4b869612e4033ead8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '0a448694155ec711e3d43dc8ab4abcf4') in 0.000107 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000901 seconds.
+  path: Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll
+  artifactKey: Guid(fb286cd0f33ce4f5e81baf10dab8d865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll using Guid(fb286cd0f33ce4f5e81baf10dab8d865) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '484d837f2f475e289d6536a4b47b7973') in 0.000111667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000773 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsExampleTabsManager.cs
+  artifactKey: Guid(d684454c7ae4aa749bf72961f5d54d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsExampleTabsManager.cs using Guid(d684454c7ae4aa749bf72961f5d54d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '510b0ba8409999969618ba93a0d6a9d2') in 0.000124834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000972 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKShareTournamentDialog.swift
+  artifactKey: Guid(e8b68c3227d0545b0baf196182ca495c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKShareTournamentDialog.swift using Guid(e8b68c3227d0545b0baf196182ca495c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: 'a3a42741c2e7576c5990703e797c51ba') in 0.000516542 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKShareTournamentDialog.swift' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001212 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/AccessTokenMenu.cs
+  artifactKey: Guid(4cc408e158eec46b28b93a44fc8819ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/AccessTokenMenu.cs using Guid(4cc408e158eec46b28b93a44fc8819ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd9992aec30380308d1d36c4c00bb3e60') in 0.000120083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000899 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/libcrypto-3.dll
+  artifactKey: Guid(74b1f53b4dea04c8187b202c9a532704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/libcrypto-3.dll using Guid(74b1f53b4dea04c8187b202c9a532704) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5ccefb41389545c914650a76b3086014') in 0.000107459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000704 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h
+  artifactKey: Guid(7461bcc2e2c714a03a3f60d68ec79369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h using Guid(7461bcc2e2c714a03a3f60d68ec79369) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: 'df9da519565e7531a086facff2c41ba1') in 0.00052175 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000894 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/AppLinks.cs
+  artifactKey: Guid(f9f0b7257fa054227be6e26bf1f6b339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/AppLinks.cs using Guid(f9f0b7257fa054227be6e26bf1f6b339) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5c4310341760fd01dec99b3efd3e4b15') in 0.000107208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000611 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Sprites/file.png
+  artifactKey: Guid(31956cf11e98440098fe28cc73ea8117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Sprites/file.png using Guid(31956cf11e98440098fe28cc73ea8117) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'dc9ed7ac0d550237d905f95e6fa282b5') in 0.004496041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000760 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsVirtualGamepadManager.cs
+  artifactKey: Guid(59e12909d8366e14fadb4c9f13d6d4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsVirtualGamepadManager.cs using Guid(59e12909d8366e14fadb4c9f13d6d4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '3da8285dadede56a718544dab4cea714') in 0.000148125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000648 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/zlib1.dll
+  artifactKey: Guid(3c5ab29a1134642258705c127eb75e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/zlib1.dll using Guid(3c5ab29a1134642258705c127eb75e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8ef14caf5dc41f0877ce36a6bd178884') in 0.000119334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000752 seconds.
+  path: Assets/ExternalDependencyManager/Editor/LICENSE
+  artifactKey: Guid(35a6726adf03479eb04b8c082346d551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/LICENSE using Guid(35a6726adf03479eb04b8c082346d551) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f09f537b2bbbe8fb681a9c7731c632c6') in 0.000306167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000613 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/AppRequests.unity
+  artifactKey: Guid(c2250c9c5cf00425384401321f8dffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/AppRequests.unity using Guid(c2250c9c5cf00425384401321f8dffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '2be857776c1a6b249a6f3cf9df79dbcb') in 0.000122625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000619 seconds.
+  path: Assets/FacebookSDK/Plugins/Canvas/Facebook.Unity.Canvas.dll
+  artifactKey: Guid(c57105322a98c474faf1ce607f20c3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Canvas/Facebook.Unity.Canvas.dll using Guid(c57105322a98c474faf1ce607f20c3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ec485e9c8858c1454c5c3bfb51adf0f4') in 0.000107375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000570 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm
+  artifactKey: Guid(5cafb2af7ca9641f58022a816236d1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm using Guid(5cafb2af7ca9641f58022a816236d1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: '37891a066fc8b3239f42dd9b589737f0') in 0.000391458 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000972 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/libcrypto-3-x64.dll
+  artifactKey: Guid(c2467336ababd4880b8864cdfd09525e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/libcrypto-3-x64.dll using Guid(c2467336ababd4880b8864cdfd09525e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '21ad42db63425f1050ea2434226071aa') in 0.000128542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000596 seconds.
+  path: Assets/Editor/DisableBitcode.cs
+  artifactKey: Guid(201fa01d552b84a74917c9cc8a4c297c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/DisableBitcode.cs using Guid(201fa01d552b84a74917c9cc8a4c297c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1480b499ee962dd679edcd410cd97885') in 0.000106667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001071 seconds.
+  path: Packages/com.unity.mobile.notifications/Editor/NotificationSettingsManager.cs
+  artifactKey: Guid(0863bf92b4fcc45b0b9267325249bf0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.mobile.notifications/Editor/NotificationSettingsManager.cs using Guid(0863bf92b4fcc45b0b9267325249bf0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'e71a8bba88b00a3c98b0b0cb2e2db35c') in 0.000287958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000731 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/cpprest_2_10.dll
+  artifactKey: Guid(a81c4e892c0334b128476132960c4011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/cpprest_2_10.dll using Guid(a81c4e892c0334b128476132960c4011) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '3d5eb6bfdbef5378b9a006c20bdbfc75') in 0.000103292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001241 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Toggle.cs
+  artifactKey: Guid(9085046f02f69544eb97fd06b6048fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Toggle.cs using Guid(9085046f02f69544eb97fd06b6048fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '2cdb27faa68a8b0ccdeff4554e6001d1') in 0.00060425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000895 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m
+  artifactKey: Guid(fbc51482e3ca248329707d61959f9d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m using Guid(fbc51482e3ca248329707d61959f9d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: '4f35e7a0f451d5da6f02ec4a209c3ceb') in 0.000508417 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001293 seconds.
+  path: Assets/StreamingAssets/meta.mp4
+  artifactKey: Guid(d1af671404848704f8d30617ff8f4643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/meta.mp4 using Guid(d1af671404848704f8d30617ff8f4643) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8b3778e959b594d8d07da93ead21f035') in 0.000548792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000898 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/AppLinks.unity
+  artifactKey: Guid(4ac12dfde6570493291366d0ab3eb20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/AppLinks.unity using Guid(4ac12dfde6570493291366d0ab3eb20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '48f3c00886ba6adff85f0ad3e7e3618e') in 0.000119958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001070 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsReferralsManager.cs
+  artifactKey: Guid(072116e69ac3a4eeca3ce336f18334aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsReferralsManager.cs using Guid(072116e69ac3a4eeca3ce336f18334aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5db498fdda962d7f6d65c67a54fb89b4') in 0.000129833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000978 seconds.
+  path: Assets/ExternalDependencyManager/Editor/1.2.166/Google.VersionHandlerImpl.dll.mdb
+  artifactKey: Guid(6c4efd6f9ff5b461dbfd5e3aaa6408f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/1.2.166/Google.VersionHandlerImpl.dll.mdb using Guid(6c4efd6f9ff5b461dbfd5e3aaa6408f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f427ab5763fc597269485f82654e3c14') in 0.000279875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000943 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/DialogShare.cs
+  artifactKey: Guid(e93c4155902d3496399630ee494eab6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/DialogShare.cs using Guid(e93c4155902d3496399630ee494eab6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'eb304bcca48f611bebea9811f1e94b20') in 0.000113084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000813 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/LibFBGManaged.dll
+  artifactKey: Guid(f474d2eb5ff0c41ea88db94b07e9a971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/LibFBGManaged.dll using Guid(f474d2eb5ff0c41ea88db94b07e9a971) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '982896cff4c95ffbd6808ef24d6a175c') in 0.000126334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000859 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Pay.unity
+  artifactKey: Guid(3ee189cdb21ea4bdb9d7022a0780c44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Pay.unity using Guid(3ee189cdb21ea4bdb9d7022a0780c44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'e96e98e527116ddb3c894a903545e017') in 0.000107041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000987 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/LayoutElement.cs
+  artifactKey: Guid(306cc8c2b49d7114eaa3623786fc2126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Layout/LayoutElement.cs using Guid(306cc8c2b49d7114eaa3623786fc2126) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'bcf8a0fbe3d7396a2134ce496c835db3') in 0.000137084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000894 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/FBWindowsInitManager.cs
+  artifactKey: Guid(645295939ce40b34da9edd1810f5ba00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/FBWindowsInitManager.cs using Guid(645295939ce40b34da9edd1810f5ba00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f1bff14be5131e2ec217e035d419f980') in 0.000111584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000853 seconds.
+  path: Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll
+  artifactKey: Guid(c49f2b3ca212b47fc9cd8ce655177c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll using Guid(c49f2b3ca212b47fc9cd8ce655177c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '950397d69019491518892eaa3f37550e') in 0.000104417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000921 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentFetcher.swift
+  artifactKey: Guid(a2bf9c24f7d8f4c83b760043d97deadf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentFetcher.swift using Guid(a2bf9c24f7d8f4c83b760043d97deadf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: 'f03c6507db8f7371fa7cf6b220ed9820') in 0.000651875 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentFetcher.swift' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001126 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/WebView2Loader.dll
+  artifactKey: Guid(118a1719df3654445bf95d79c2ee1e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/WebView2Loader.dll using Guid(118a1719df3654445bf95d79c2ee1e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd7575820fefa2a748ed89185009e2597') in 0.000114209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000739 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm
+  artifactKey: Guid(4c29c5d59509848c4bc24c13ac976932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm using Guid(4c29c5d59509848c4bc24c13ac976932) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: '82a3b00cd474d4ccd107fcdfa9f6d748') in 0.000371208 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000943 seconds.
+  path: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournament.swift
+  artifactKey: Guid(40782e83ff8774bfb8280e20c134e6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournament.swift using Guid(40782e83ff8774bfb8280e20c134e6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Could not generate preview image
+ #0 PlatformStacktrace::GetStacktrace(int)
+ #1 DebugStringToFile(DebugStringToFileData const&)
+ #2 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char>> const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #3 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #4 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID>> const&, core::vector<PostprocessorInfo, core::allocator<PostprocessorInfo, 0ul>> const&, TransientArtifactProvider const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #5 AssetImportWorker::Import(AssetResolver&, ImportAssetInputs const&, TransientArtifactProvider const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #6 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_13::operator()() const
+ #7 _dispatch_client_callout
+ #8 _dispatch_async_and_wait_invoke
+ #9 _dispatch_client_callout
+ #10 _dispatch_main_queue_drain
+ #11 _dispatch_main_queue_callback_4CF
+ #12 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #13 __CFRunLoopRun
+ #14 CFRunLoopRunSpecific
+ #15 RunCurrentEventLoopInMode
+ #16 ReceiveNextEventCommon
+ #17 _BlockUntilNextEventMatchingListInModeWithFilter
+ #18 _DPSNextEvent
+ #19 -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #20 -[NSApplication run]
+ #21 NSApplicationMain
+ #22 EditorMain(int, char const**)
+ #23 main
+ #24 start
+
+ -> (artifact id: 'c7790bf035b30b2e57add75962aac0e2') in 0.000308292 seconds
+  ERROR: Import of 'Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournament.swift' had errors: Could not generate preview image
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000887 seconds.
+  path: Assets/ExternalDependencyManager/Editor/1.2.166/Google.PackageManagerResolver.dll.mdb
+  artifactKey: Guid(37377da79a4724726800f659aaa33b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/1.2.166/Google.PackageManagerResolver.dll.mdb using Guid(37377da79a4724726800f659aaa33b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5f76fa4be075e6dad0d44c74b9b73e72') in 0.000559959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000609 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/XInputInterface.dll
+  artifactKey: Guid(4a90381adadeb104780cdd17fb448eaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/XInputInterface.dll using Guid(4a90381adadeb104780cdd17fb448eaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '651971a1ff4eabab574738917dbf0d17') in 0.00010475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000976 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Text.cs
+  artifactKey: Guid(5f7201a12d95ffc409449d95f23cf332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Text.cs using Guid(5f7201a12d95ffc409449d95f23cf332) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'da97f40b3f16605f05ed9d06ac86105e') in 0.000121208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001218 seconds.
+  path: Assets/ExternalDependencyManager/Editor/README.md
+  artifactKey: Guid(11eb52f780284fd69194951ac46cb538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/README.md using Guid(11eb52f780284fd69194951ac46cb538) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'fe457072901b5301879336c555f801c6') in 0.000438792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000768 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/PurchaseButton.prefab
+  artifactKey: Guid(48ecc8417590fd543b994fb05d0e5c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/PurchaseButton.prefab using Guid(48ecc8417590fd543b994fb05d0e5c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '0d581630f26f8b0eadb8974e9975df57') in 0.001002167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000735 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Prefabs/PurchaseRowPrefab.cs
+  artifactKey: Guid(9feaad17c481d44469952dc10f3f4bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Prefabs/PurchaseRowPrefab.cs using Guid(9feaad17c481d44469952dc10f3f4bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ac443d9fbac2232ba5d80a9d88312e89') in 0.000110083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Textures/White.psd
+  artifactKey: Guid(6f2bd1fb3a7ec4616b4311f171db577d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Textures/White.psd using Guid(6f2bd1fb3a7ec4616b4311f171db577d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '2af6468e2d6eabfd89e1ea38fe8aa43d') in 0.002744291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000972 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/GraphicRaycaster.cs
+  artifactKey: Guid(dc42784cf147c0c48a680349fa168899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/GraphicRaycaster.cs using Guid(dc42784cf147c0c48a680349fa168899) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'a3560df572b4684030dc9cb8069eb06f') in 0.000121083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000582 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Scripts/PurchasePage.cs
+  artifactKey: Guid(0e4d701b96c9b4c48967148ca6ed7c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Scripts/PurchasePage.cs using Guid(0e4d701b96c9b4c48967148ca6ed7c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'e1fa204e86569b428206ca768f5c3f43') in 0.000106125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000692 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/UploadToMediaLibrary.unity
+  artifactKey: Guid(6953b5ebad5134d32b0433745ec4a661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/UploadToMediaLibrary.unity using Guid(6953b5ebad5134d32b0433745ec4a661) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '4525263865b62dc56a66af35004d7415') in 0.000109709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000563 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/AppEvents.cs
+  artifactKey: Guid(e3c0dd81ff77c4c30834810815c69f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/AppEvents.cs using Guid(e3c0dd81ff77c4c30834810815c69f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'a265e0c1f8c43a3bd93f0f8fc9acf783') in 0.000104083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001248 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/EventSystem/InputModules/StandaloneInputModule.cs
+  artifactKey: Guid(4f231c4fb786f3946a6b90b886c48677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/EventSystem/InputModules/StandaloneInputModule.cs using Guid(4f231c4fb786f3946a6b90b886c48677) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '08626ac0d67255c2026312ae46bca4d3') in 0.000784 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000723 seconds.
+  path: Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll
+  artifactKey: Guid(516664901472b44fe83b720b195b5b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll using Guid(516664901472b44fe83b720b195b5b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '25e949837ce9a45ac78543d13dd35ced') in 0.000108292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000947 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/EventSystem/EventSystem.cs
+  artifactKey: Guid(76c392e42b5098c458856cdf6ecaaaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/EventSystem/EventSystem.cs using Guid(76c392e42b5098c458856cdf6ecaaaa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '315f4beb904d73fa3a7c62ca5b29c428') in 0.000137125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000630 seconds.
+  path: Assets/FacebookSDK/link.xml
+  artifactKey: Guid(51f4619c385224a23a3edb9092c7d49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/link.xml using Guid(51f4619c385224a23a3edb9092c7d49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '0820712ae770ff93607ada5ffd950475') in 0.000430041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000569 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/TournamentsMenu.unity
+  artifactKey: Guid(6f8d688887086476cb9533793ffa1756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/TournamentsMenu.unity using Guid(6f8d688887086476cb9533793ffa1756) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'fdab8d5be5dbcd72c4790dac97994325') in 0.000110083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000575 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x64/METADATA.bzl
+  artifactKey: Guid(8c084ca3602034d93b888266a68addc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x64/METADATA.bzl using Guid(8c084ca3602034d93b888266a68addc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '18b9c6a6c5f556c2443420695ff5188e') in 0.00024675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000626 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/WebView2Loader.dll
+  artifactKey: Guid(839a1df6e42814ae4867349515df25d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/WebView2Loader.dll using Guid(839a1df6e42814ae4867349515df25d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '87c5ae287f89fa936bd4f402dd81d384') in 0.000104416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000700 seconds.
+  path: Assets/ExternalDependencyManager/Editor/CHANGELOG.md
+  artifactKey: Guid(d67e36cf70144eeeb62948707545ecfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalDependencyManager/Editor/CHANGELOG.md using Guid(d67e36cf70144eeeb62948707545ecfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '9d20f29f06c543e21cadd4445da88601') in 0.000414416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000697 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Scripts/MainPage.cs
+  artifactKey: Guid(7d4353ba3d5f24acdbb20ccbd443012a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Scripts/MainPage.cs using Guid(7d4353ba3d5f24acdbb20ccbd443012a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '46ae0fd1b90fd12a8f9c57c85cd547f0') in 0.000102542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000750 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Scripts/SavePage.cs
+  artifactKey: Guid(c83c2525a94994989972f826e5a84766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Scripts/SavePage.cs using Guid(c83c2525a94994989972f826e5a84766) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'e044430abff9c8cac3f5060c9973396c') in 0.0001055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000757 seconds.
+  path: Assets/FacebookSDK/Plugins/Facebook.Unity.dll
+  artifactKey: Guid(08462833fafe743b8bd59914b9f52696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Facebook.Unity.dll using Guid(08462833fafe743b8bd59914b9f52696) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f93c90da64363653f7cc8ff52ff5b1ce') in 0.000094042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000607 seconds.
+  path: Assets/FacebookSDK/Plugins/Windows/x86/tinyxml2.dll
+  artifactKey: Guid(e6dca454fc2844559bcce201db4cb3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Windows/x86/tinyxml2.dll using Guid(e6dca454fc2844559bcce201db4cb3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '9501b13be754b615e5b0290b85baf9b1') in 0.000095666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000835 seconds.
+  path: Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Scrollbar.cs
+  artifactKey: Guid(2a4db7a114972834c8e4117be1d82ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/Runtime/UGUI/UI/Core/Scrollbar.cs using Guid(2a4db7a114972834c8e4117be1d82ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'bdff8e3849124a47395a8140ed926f1f') in 0.000100834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000587 seconds.
+  path: Assets/FacebookSDK/Examples/Windows/WindowsExample.unity
+  artifactKey: Guid(a3acdfcd48c61dc4a89fc0056edf3fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Windows/WindowsExample.unity using Guid(a3acdfcd48c61dc4a89fc0056edf3fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '9bfb81542ea3b189105b4c0e6d346517') in 0.000093292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000570 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Scripts/AdsPage.cs
+  artifactKey: Guid(c27511b840ed846b385304666945e4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Scripts/AdsPage.cs using Guid(c27511b840ed846b385304666945e4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ddcbd14f67fb6fe1a89a1eaed1b2a926') in 0.000096625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000718 seconds.
+  path: Assets/FacebookSDK/Plugins/Editor/Dependencies.xml
+  artifactKey: Guid(1543e5f9bab73423c96b42cab90363ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Plugins/Editor/Dependencies.xml using Guid(1543e5f9bab73423c96b42cab90363ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '193bf11ce7f2d157eda2b15dfda7ec31') in 0.000257875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000773 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/Scripts/SettingsMenu.cs
+  artifactKey: Guid(cc2ee337e0a7e4a92b625f1528063a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/Scripts/SettingsMenu.cs using Guid(cc2ee337e0a7e4a92b625f1528063a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd014f7fd09eda97bac27c3c9a5c73e32') in 0.000095542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000551 seconds.
+  path: Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/MainMenu.cs
+  artifactKey: Guid(922e3ad8d88a146b3b392cd8c84edd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/MainMenu.cs using Guid(922e3ad8d88a146b3b392cd8c84edd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '6056ad25c1d4b84d572b25f3504452d0') in 0.000110667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000563 seconds.
+  path: Assets/FacebookSDK/Examples/CloudAndroid/MainScene.unity
+  artifactKey: Guid(4c5e54f177d1f4d4a97e1e85ee98de79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FacebookSDK/Examples/CloudAndroid/MainScene.unity using Guid(4c5e54f177d1f4d4a97e1e85ee98de79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5686b292be80719189381a1d6a0376df') in 0.000106333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 12.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5742 unused Assets / (0.5 MB). Loaded Objects now: 6365.
-Memory consumption went from 112.0 MB to 111.5 MB.
-Total: 20.053959 ms (FindLiveObjects: 0.561875 ms CreateObjectMapping: 0.289041 ms MarkObjects: 18.203417 ms  DeleteObjects: 0.999167 ms)
+Unloading 14 unused Assets / (0.7 KB). Loaded Objects now: 6469.
+Memory consumption went from 109.7 MB to 109.7 MB.
+Total: 51.013833 ms (FindLiveObjects: 0.465084 ms CreateObjectMapping: 0.096416 ms MarkObjects: 50.318292 ms  DeleteObjects: 0.133584 ms)
+
+Prepare: number of updated asset objects reloaded= 7
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 6469.
+Memory consumption went from 109.8 MB to 109.8 MB.
+Total: 5.285750 ms (FindLiveObjects: 0.200250 ms CreateObjectMapping: 0.090917 ms MarkObjects: 4.987375 ms  DeleteObjects: 0.006750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x331357000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.010 seconds
+Refreshing native plugins compatible for Editor in 32.09 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.618 seconds
+Domain Reload Profiling: 3634ms
+	BeginReloadAssembly (901ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (59ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (237ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (1041ms)
+		LoadAssemblies (1199ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (336ms)
+			TypeCache.Refresh (163ms)
+				TypeCache.ScanAssembly (118ms)
+			BuildScriptInfoCaches (161ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1619ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1418ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (178ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (1039ms)
+			ProcessInitializeOnLoadMethodAttributes (137ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 3.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5864 unused Assets / (308.6 KB). Loaded Objects now: 6471.
+Memory consumption went from 126.7 MB to 126.4 MB.
+Total: 10.582584 ms (FindLiveObjects: 1.714500 ms CreateObjectMapping: 0.436958 ms MarkObjects: 6.433500 ms  DeleteObjects: 1.997042 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 398.173265 seconds.
+  path: Assets/Resources/UnityPlayerAccountSettings.asset
+  artifactKey: Guid(1660095c384cf4b18a654b87aa48392f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/UnityPlayerAccountSettings.asset using Guid(1660095c384cf4b18a654b87aa48392f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '2b6a15c32dc57316cabfbef33d028dc1') in 0.044507959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.409656 seconds.
+  path: Assets/Sikuthai/Scenes/Icon.png
+  artifactKey: Guid(2419c7118f3fd4ccba4576d455e42a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sikuthai/Scenes/Icon.png using Guid(2419c7118f3fd4ccba4576d455e42a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '95dc900b6896f86954630dc444fbc498') in 0.057371334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.162775 seconds.
+  path: Assets/Sikuthai/Scenes/Home.unity
+  artifactKey: Guid(6e029183f556e47dfa254c50d32878f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sikuthai/Scenes/Home.unity using Guid(6e029183f556e47dfa254c50d32878f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1d52671f29370ebe2027535da04b492a') in 0.000354458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x317fdb000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.768 seconds
+Refreshing native plugins compatible for Editor in 4.26 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.15 ms, found 3 plugins.
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.806 seconds
+Domain Reload Profiling: 1577ms
+	BeginReloadAssembly (202ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (91ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (508ms)
+		LoadAssemblies (361ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (196ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (169ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (806ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (585ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (322ms)
+			ProcessInitializeOnLoadMethodAttributes (190ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 2.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5864 unused Assets / (0.8 MB). Loaded Objects now: 6474.
+Memory consumption went from 126.6 MB to 125.8 MB.
+Total: 12.595959 ms (FindLiveObjects: 4.436083 ms CreateObjectMapping: 0.538042 ms MarkObjects: 5.702875 ms  DeleteObjects: 1.918375 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x3317bb000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.747 seconds
+Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.14 ms, found 3 plugins.
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.753 seconds
+Domain Reload Profiling: 1504ms
+	BeginReloadAssembly (190ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (81ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (500ms)
+		LoadAssemblies (344ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (205ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (177ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (754ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (571ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (45ms)
+			ProcessInitializeOnLoadAttributes (321ms)
+			ProcessInitializeOnLoadMethodAttributes (178ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5864 unused Assets / (0.8 MB). Loaded Objects now: 6476.
+Memory consumption went from 126.5 MB to 125.7 MB.
+Total: 8.229500 ms (FindLiveObjects: 1.032334 ms CreateObjectMapping: 0.468250 ms MarkObjects: 5.480041 ms  DeleteObjects: 1.248208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x346cb3000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.662 seconds
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 3 plugins.
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.704 seconds
+Domain Reload Profiling: 1371ms
+	BeginReloadAssembly (175ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (73ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (431ms)
+		LoadAssemblies (302ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (169ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (150ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (704ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (533ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (291ms)
+			ProcessInitializeOnLoadMethodAttributes (173ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5864 unused Assets / (0.7 MB). Loaded Objects now: 6478.
+Memory consumption went from 126.5 MB to 125.7 MB.
+Total: 8.431166 ms (FindLiveObjects: 0.384167 ms CreateObjectMapping: 0.333833 ms MarkObjects: 6.544000 ms  DeleteObjects: 1.168875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 598.711739 seconds.
+  path: Assets/Sikuthai/Script/FacebookInit.cs
+  artifactKey: Guid(c8b4ed1c66cae4b328f2871725a6e878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sikuthai/Script/FacebookInit.cs using Guid(c8b4ed1c66cae4b328f2871725a6e878) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '59250f86375008827fbf70fc05543853') in 0.101974916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x331477000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.667 seconds
+Refreshing native plugins compatible for Editor in 2.36 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.08 ms, found 3 plugins.
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.713 seconds
+Domain Reload Profiling: 2383ms
+	BeginReloadAssembly (825ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (128ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (206ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (769ms)
+		LoadAssemblies (915ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (182ms)
+			TypeCache.Refresh (31ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (142ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (713ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (497ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (289ms)
+			ProcessInitializeOnLoadMethodAttributes (141ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5864 unused Assets / (1.0 MB). Loaded Objects now: 6480.
+Memory consumption went from 126.4 MB to 125.4 MB.
+Total: 14.591625 ms (FindLiveObjects: 6.080833 ms CreateObjectMapping: 0.457166 ms MarkObjects: 6.249500 ms  DeleteObjects: 1.803708 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x330887000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.760 seconds
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.676 seconds
+Domain Reload Profiling: 2438ms
+	BeginReloadAssembly (1040ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (123ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (305ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (649ms)
+		LoadAssemblies (789ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (266ms)
+			TypeCache.Refresh (148ms)
+				TypeCache.ScanAssembly (107ms)
+			BuildScriptInfoCaches (111ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (676ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (508ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (44ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (142ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 2.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5934 unused Assets / (1.0 MB). Loaded Objects now: 6547.
+Memory consumption went from 126.6 MB to 125.6 MB.
+Total: 8.270000 ms (FindLiveObjects: 0.373000 ms CreateObjectMapping: 0.258000 ms MarkObjects: 6.311709 ms  DeleteObjects: 1.326875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (3.5 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 111.3 MB.
+Total: 25.342250 ms (FindLiveObjects: 0.420583 ms CreateObjectMapping: 0.273167 ms MarkObjects: 21.633917 ms  DeleteObjects: 3.013750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.4 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.4 MB.
+Total: 25.684583 ms (FindLiveObjects: 0.505542 ms CreateObjectMapping: 0.264000 ms MarkObjects: 23.701709 ms  DeleteObjects: 1.212750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (0.9 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.9 MB.
+Total: 28.923833 ms (FindLiveObjects: 0.443875 ms CreateObjectMapping: 0.297959 ms MarkObjects: 26.920209 ms  DeleteObjects: 1.261292 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.2 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.5 MB.
+Total: 25.867500 ms (FindLiveObjects: 0.426083 ms CreateObjectMapping: 0.264000 ms MarkObjects: 23.934792 ms  DeleteObjects: 1.242250 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (0.9 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.8 MB.
+Total: 9.312584 ms (FindLiveObjects: 0.404208 ms CreateObjectMapping: 0.287042 ms MarkObjects: 7.401291 ms  DeleteObjects: 1.219875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.0 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.7 MB.
+Total: 7.737500 ms (FindLiveObjects: 0.377250 ms CreateObjectMapping: 0.309833 ms MarkObjects: 6.021584 ms  DeleteObjects: 1.028125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.0 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.7 MB.
+Total: 6.596833 ms (FindLiveObjects: 0.363709 ms CreateObjectMapping: 0.321625 ms MarkObjects: 4.963292 ms  DeleteObjects: 0.947958 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (0.8 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 114.0 MB.
+Total: 6.217250 ms (FindLiveObjects: 0.346834 ms CreateObjectMapping: 0.270458 ms MarkObjects: 4.680416 ms  DeleteObjects: 0.919000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (0.8 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 114.0 MB.
+Total: 6.620042 ms (FindLiveObjects: 0.377708 ms CreateObjectMapping: 0.288833 ms MarkObjects: 4.974750 ms  DeleteObjects: 0.978583 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (493.5 KB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 114.2 MB.
+Total: 6.798042 ms (FindLiveObjects: 0.349959 ms CreateObjectMapping: 0.287916 ms MarkObjects: 5.167125 ms  DeleteObjects: 0.992458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (0.6 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 114.1 MB.
+Total: 6.952000 ms (FindLiveObjects: 0.367792 ms CreateObjectMapping: 0.289125 ms MarkObjects: 5.279541 ms  DeleteObjects: 1.015250 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.5 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.2 MB.
+Total: 8.864250 ms (FindLiveObjects: 0.374583 ms CreateObjectMapping: 0.452333 ms MarkObjects: 6.478458 ms  DeleteObjects: 1.558375 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.0 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.7 MB.
+Total: 7.289917 ms (FindLiveObjects: 0.352417 ms CreateObjectMapping: 0.338792 ms MarkObjects: 5.414458 ms  DeleteObjects: 1.183958 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (0.8 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.9 MB.
+Total: 6.559666 ms (FindLiveObjects: 0.338375 ms CreateObjectMapping: 0.270917 ms MarkObjects: 4.931833 ms  DeleteObjects: 1.018208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (494.7 KB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 114.2 MB.
+Total: 6.793708 ms (FindLiveObjects: 0.330958 ms CreateObjectMapping: 0.335542 ms MarkObjects: 5.065917 ms  DeleteObjects: 1.061125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.3 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.5 MB.
+Total: 6.858625 ms (FindLiveObjects: 0.340833 ms CreateObjectMapping: 0.284459 ms MarkObjects: 4.983416 ms  DeleteObjects: 1.249750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.8 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 112.9 MB.
+Total: 7.529666 ms (FindLiveObjects: 0.389666 ms CreateObjectMapping: 0.320250 ms MarkObjects: 5.082083 ms  DeleteObjects: 1.737458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.4 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.3 MB.
+Total: 7.180708 ms (FindLiveObjects: 0.352208 ms CreateObjectMapping: 0.314000 ms MarkObjects: 4.899209 ms  DeleteObjects: 1.615208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.1 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.7 MB.
+Total: 7.604541 ms (FindLiveObjects: 0.364917 ms CreateObjectMapping: 0.298667 ms MarkObjects: 5.158833 ms  DeleteObjects: 1.782083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.1 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.6 MB.
+Total: 6.993834 ms (FindLiveObjects: 0.355667 ms CreateObjectMapping: 0.288916 ms MarkObjects: 4.740000 ms  DeleteObjects: 1.608917 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (2.1 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 112.7 MB.
+Total: 7.856000 ms (FindLiveObjects: 0.571208 ms CreateObjectMapping: 0.304750 ms MarkObjects: 4.830458 ms  DeleteObjects: 2.149042 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (0.9 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.8 MB.
+Total: 28.637250 ms (FindLiveObjects: 0.448209 ms CreateObjectMapping: 0.292500 ms MarkObjects: 26.694875 ms  DeleteObjects: 1.201500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (0.9 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.8 MB.
+Total: 26.013000 ms (FindLiveObjects: 0.837250 ms CreateObjectMapping: 0.483416 ms MarkObjects: 23.501167 ms  DeleteObjects: 1.190875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (1.2 MB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 113.6 MB.
+Total: 8.242541 ms (FindLiveObjects: 0.378458 ms CreateObjectMapping: 0.290042 ms MarkObjects: 6.563750 ms  DeleteObjects: 1.010041 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5872 unused Assets / (326.6 KB). Loaded Objects now: 6547.
+Memory consumption went from 114.7 MB to 114.4 MB.
+Total: 31.208292 ms (FindLiveObjects: 0.417625 ms CreateObjectMapping: 0.259167 ms MarkObjects: 29.437250 ms  DeleteObjects: 1.094042 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x330887000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.833 seconds
+Refreshing native plugins compatible for Editor in 2.00 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.618 seconds
+Domain Reload Profiling: 1456ms
+	BeginReloadAssembly (302ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (22ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (163ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (475ms)
+		LoadAssemblies (315ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (228ms)
+			TypeCache.Refresh (24ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (195ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (618ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (466ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (34ms)
+			ProcessInitializeOnLoadAttributes (268ms)
+			ProcessInitializeOnLoadMethodAttributes (135ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5934 unused Assets / (1.6 MB). Loaded Objects now: 6549.
+Memory consumption went from 126.5 MB to 125.0 MB.
+Total: 6.682667 ms (FindLiveObjects: 0.362792 ms CreateObjectMapping: 0.263750 ms MarkObjects: 4.660583 ms  DeleteObjects: 1.395375 ms)
 
 Prepare: number of updated asset objects reloaded= 0

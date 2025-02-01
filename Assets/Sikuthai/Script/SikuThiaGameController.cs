@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.Services.CloudSave;
 //♠♣♦♥
 public class SikuThiaGameController : MonoBehaviour
 {
-    public static SikuThiaGameController instance ;
+    public static SikuThiaGameController instance;
     public GameObject cardPrefab;
     public List<Sprite> suitsSprite = new List<Sprite>();
 
@@ -38,17 +39,17 @@ public class SikuThiaGameController : MonoBehaviour
 
     [Header("BUTTON")]
     public Button dropButton;
-    public Button drawnButton, eatButton,increasButton,discreasButton;
+    public Button drawnButton, eatButton, increasButton, discreasButton;
 
     [Header("COIN")]
     public int coin = 9999;
     public int flush = 1;
     public int maxFlush = 10;
     public int minFlush = 1;
-   private int playerWinCount;
-   private int aiWinCount;
+    private int playerWinCount;
+    private int aiWinCount;
     public Text coinText;
-    public Text flushText,playerWinCountText,aiWinCoinText;
+    public Text flushText, playerWinCountText, aiWinCoinText;
     bool isAiWin = false;
 
     private int round = 0;
@@ -73,10 +74,11 @@ public class SikuThiaGameController : MonoBehaviour
         }
     }
 
-    IEnumerator Start()
+    async void Start()
     {
-        coin = PlayerPrefs.GetInt("c", coin);
-        if(coin < 0)
+        //coin = PlayerPrefs.GetInt("c", coin);
+        coin = await AuthInitialization.LoadCoins();
+        if (coin < 0)
         {
             coin = 10;
         }
@@ -84,8 +86,8 @@ public class SikuThiaGameController : MonoBehaviour
         aiWinCount = PlayerPrefs.GetInt("a", aiWinCount);
 
         UpdateTextUi();
-        
-        yield return InterSecGame();
+
+        StartCoroutine(InterSecGame());
     }
 
     IEnumerator InterSecGame()
@@ -93,7 +95,7 @@ public class SikuThiaGameController : MonoBehaviour
         flushText.text = $"1FLUSH = {flush}$";
         gameStateText.text = "you can change the flush before card deal in 3s";
         dropButton.interactable = drawnButton.interactable = eatButton.interactable = false;
-        increasButton.interactable= discreasButton.interactable = true;
+        increasButton.interactable = discreasButton.interactable = true;
         GenerateDeck();
         yield return new WaitForSeconds(3f);
         ShuffleDeck();
@@ -117,7 +119,7 @@ public class SikuThiaGameController : MonoBehaviour
 
         playerWinCountText.text = $"PLAYER WIN COUNT= {playerWinCount}";
         aiWinCoinText.text = $"AI WIN COUNT = {aiWinCount}";
-       
+
     }
 
     void GenerateDeck()
@@ -156,26 +158,26 @@ public class SikuThiaGameController : MonoBehaviour
                     Random.Range(-300f, 300f),
                     0);
 
-               
+
                 newCard.transform.localPosition = randomPosition;
 
-               
+
                 newCard.transform.localRotation = Quaternion.Euler(0, 0, Random.Range(-45f, 45f));
 
-              
+
                 newCard.transform.localScale = Vector3.zero;
 
-              
-                LeanTween.scale(newCard, new Vector3(1f, 1f, 1f), 0.2f).setDelay(0.02f * i)  
-                    .setEase(LeanTweenType.easeOutQuad); 
 
-                LeanTween.moveLocal(newCard, Vector3.zero, 0.3f + 0.02f * i) 
-                    .setDelay(0.02f * i)  
-                    .setEase(LeanTweenType.easeInOutQuad);  
+                LeanTween.scale(newCard, new Vector3(1f, 1f, 1f), 0.2f).setDelay(0.02f * i)
+                    .setEase(LeanTweenType.easeOutQuad);
 
-                LeanTween.rotateZ(newCard, 0, 0.3f + 0.02f * i)  
+                LeanTween.moveLocal(newCard, Vector3.zero, 0.3f + 0.02f * i)
                     .setDelay(0.02f * i)
-                    .setEase(LeanTweenType.easeInOutQuad);  
+                    .setEase(LeanTweenType.easeInOutQuad);
+
+                LeanTween.rotateZ(newCard, 0, 0.3f + 0.02f * i)
+                    .setDelay(0.02f * i)
+                    .setEase(LeanTweenType.easeInOutQuad);
 
                 i++;
             }
@@ -198,92 +200,6 @@ public class SikuThiaGameController : MonoBehaviour
         }
     }
 
-    //IEnumerator DealCards()
-    //{
-    //    gameStateText.text = "dealing card ..";
-    //    increasButton.interactable = discreasButton.interactable = false;
-    //    playerCards.Clear();
-    //    aiCards.Clear();
-    //    int j = 0;
-    //    int pPos = 0;
-
-    //    for (int m = 0; m < 15; m++)
-    //    {
-
-    //        if (m % 2 == 0)
-    //        {
-    //           // print($"index {m}");
-
-    //            GameObject playerCard = deck[m].gameObject;
-    //            //print(deck[m].name);
-
-    //            playerCard.transform.SetParent(playerHand.transform, true);
-
-
-    //            LeanTween.moveLocal(playerCard,
-    //                new Vector3(
-    //                    playerHandCardPos[pPos].transform.localPosition.x,
-    //                    playerHandCardPos[pPos].transform.localPosition.y * 0,
-    //                    playerHandCardPos[pPos].transform.localPosition.z)
-    //                , speed).setFrom(new Vector3(
-    //                    playerCard.transform.localPosition.x,
-    //                    playerCard.transform.localPosition.y,
-    //                    0f))
-    //                .setEase(LeanTweenType.easeInOutExpo)
-    //                .setOnComplete(() =>
-    //                {
-    //                    //playerCard.transform.SetParent(playerHand.transform, false);
-    //                });
-
-    //            playerCards.Add(deck[m]);
-    //            //deck.Remove(deck[i]);
-
-
-    //            //yield return FlipCard(playerCard,false);
-    //            yield return new WaitForSeconds(speed);
-    //            pPos++;
-    //        }
-    //        else 
-    //        {
-
-    //            GameObject aiCard = deck[m].gameObject;
-    //            aiCard.transform.SetParent(aiHand.transform, true);
-    //            LeanTween.moveLocal(aiCard,
-    //                new Vector3(
-    //                    aiHandCardPos[j].transform.localPosition.x,
-    //                    aiHandCardPos[j].transform.localPosition.y * 0,
-    //                    aiHandCardPos[j].transform.localPosition.z)
-    //                , speed)
-    //                .setFrom(new Vector3(
-    //                    aiCard.transform.localPosition.x,
-    //                    aiCard.transform.localPosition.y,
-    //                    0f))
-    //                .setEase(LeanTweenType.easeInOutQuad)
-    //                .setOnComplete(() =>
-    //                {
-
-    //                });
-
-    //            aiCards.Add(deck[m]);
-
-    //            deckCardAmountText.text = deck.Count.ToString();
-    //           // yield return FlipCard(aiCard);
-    //            yield return new WaitForSeconds(speed);
-    //            j++;
-    //        }
-
-    //    }
-
-    //    deck.RemoveRange(0, 15);
-    //    for(int k = 0; k< playerCards.Count; k++)
-    //    {
-    //        yield return FlipCard(playerCards[k].gameObject, false);
-    //        yield return new WaitForSeconds(0.1f);
-    //    }
-    //    dropButton.interactable = true;
-    //    deckCardAmountText.text = deck.Count.ToString();
-    //    gameStateText.text = "..";
-    //}
     IEnumerator DealCards()
     {
         gameStateText.text = "Dealing cards...";
@@ -317,14 +233,14 @@ public class SikuThiaGameController : MonoBehaviour
                     .setOnComplete(() =>
                     {
                         LeanTween.rotateZ(playerCard, Random.Range(-10f, 10f), 0.2f).setEase(LeanTweenType.easeOutQuad); // Rotate slightly for realism
-                    LeanTween.scale(playerCard, new Vector3(1.1f, 1.1f, 1f), 0.2f).setEase(LeanTweenType.easeOutBack) // Slight scale up
-                            .setOnComplete(() =>
-                            {
-                                LeanTween.scale(playerCard, Vector3.one, 0.1f).setEase(LeanTweenType.easeInQuad); // Return to normal size
+                        LeanTween.scale(playerCard, new Vector3(1.1f, 1.1f, 1f), 0.2f).setEase(LeanTweenType.easeOutBack) // Slight scale up
+                                .setOnComplete(() =>
+                                {
+                                    LeanTween.scale(playerCard, Vector3.one, 0.1f).setEase(LeanTweenType.easeInQuad); // Return to normal size
 
-                            // Reset the card rotation back to 0 degrees
-                            LeanTween.rotateZ(playerCard, 0, 0.2f).setEase(LeanTweenType.easeInOutQuad); // Smooth rotation back to 0
-                        });
+                                    // Reset the card rotation back to 0 degrees
+                                    LeanTween.rotateZ(playerCard, 0, 0.2f).setEase(LeanTweenType.easeInOutQuad); // Smooth rotation back to 0
+                                });
                     });
 
                 playerCards.Add(deck[m]);
@@ -352,14 +268,14 @@ public class SikuThiaGameController : MonoBehaviour
                     .setOnComplete(() =>
                     {
                         LeanTween.rotateZ(aiCard, Random.Range(-10f, 10f), 0.2f).setEase(LeanTweenType.easeOutQuad); // Random rotation for realism
-                    LeanTween.scale(aiCard, new Vector3(1.1f, 1.1f, 1f), 0.2f).setEase(LeanTweenType.easeOutBack) // Slight scale up
-                            .setOnComplete(() =>
-                            {
-                                LeanTween.scale(aiCard, Vector3.one, 0.1f).setEase(LeanTweenType.easeInQuad); // Return to normal size
+                        LeanTween.scale(aiCard, new Vector3(1.1f, 1.1f, 1f), 0.2f).setEase(LeanTweenType.easeOutBack) // Slight scale up
+                                .setOnComplete(() =>
+                                {
+                                    LeanTween.scale(aiCard, Vector3.one, 0.1f).setEase(LeanTweenType.easeInQuad); // Return to normal size
 
-                            // Reset the card rotation back to 0 degrees
-                            LeanTween.rotateZ(aiCard, 0, 0.2f).setEase(LeanTweenType.easeInOutQuad); // Smooth rotation back to 0
-                        });
+                                    // Reset the card rotation back to 0 degrees
+                                    LeanTween.rotateZ(aiCard, 0, 0.2f).setEase(LeanTweenType.easeInOutQuad); // Smooth rotation back to 0
+                                });
                     });
 
                 aiCards.Add(deck[m]);
@@ -368,7 +284,7 @@ public class SikuThiaGameController : MonoBehaviour
                 yield return new WaitForSeconds(speed);
                 j++;
             }
-           
+
         }
 
         // Remove the dealt cards from the deck
@@ -445,7 +361,7 @@ public class SikuThiaGameController : MonoBehaviour
         if (playerCardDrop != null)
         {
 
-            dropButton.interactable  = false;
+            dropButton.interactable = false;
             PlayerDropTheCard(playerCardDrop);
             StartCoroutine(AIAction(dropCard));
         }
@@ -453,7 +369,7 @@ public class SikuThiaGameController : MonoBehaviour
         {
             gameStateText.text = "select card to drop";
         }
-      
+
     }
 
     public void PlayerDropTheCard(Card dropCard)
@@ -479,11 +395,11 @@ public class SikuThiaGameController : MonoBehaviour
                         cardDrop.transform.localPosition.y,
                         0f))
                     .setEase(LeanTweenType.easeInOutExpo);
-                  
+
 
 
         playerCards.Remove(dropCard);
-     
+
         this.dropCard = dropCard;
         playerCardDrop = null;
         CheckWin(playerCards, "Player");
@@ -492,47 +408,6 @@ public class SikuThiaGameController : MonoBehaviour
     }
 
 
-
-    //public void  PlayerDrawnCard()
-    //{
-    //    dropButton.interactable = true;
-    //    drawnButton.interactable = eatButton.interactable = false;
-    //    Card drawnCard = deck[0];
-    //    playerCards.Add(drawnCard);
-    //    drawnCard.transform.SetParent(playerHand.transform, true);
-    //    LeanTween.moveLocal(drawnCard.gameObject,
-    //                new Vector3(
-    //                    playerHandCardPos[7].transform.localPosition.x,
-    //                    playerHandCardPos[7].transform.localPosition.y * 0,
-    //                    playerHandCardPos[7].transform.localPosition.z)
-    //                , 0.5f).setFrom(new Vector3(
-    //                    drawnCard.transform.localPosition.x,
-    //                    drawnCard.transform.localPosition.y,
-    //                    0f))
-    //                .setEase(LeanTweenType.easeInOutQuad)
-    //                .setOnComplete(() =>
-    //                {
-
-    //                    deck.Remove(drawnCard);
-    //                    deckCardAmountText.text = deck.Count.ToString();
-    //                    if (!CheckWin(playerCards, "Player"))
-    //                    {
-    //                        if (deck.Count <= 0)
-    //                        {
-    //                            StartCoroutine(OutOfDeck());
-    //                        }
-    //                    };
-    //                });
-    //    StartCoroutine( FlipCard(drawnCard.gameObject,false));
-
-
-
-    //    print($"drawn - {playerCards.Count}");
-    //    List<Card> unPairCard = GetUnpairedCards(playerCards);
-
-    //    unPairCard.ForEach(c => { print("drawn unpair - "+c.name); });
-
-    //}
 
     public void PlayerDrawnCard()
     {
@@ -561,10 +436,10 @@ public class SikuThiaGameController : MonoBehaviour
                     .setOnComplete(() =>
                     {
                         LeanTween.scale(drawnCard.gameObject, Vector3.one, 0.2f).setEase(LeanTweenType.easeInQuad); // Return to original scale
-                    LeanTween.rotateZ(drawnCard.gameObject, 0, 0.2f).setEase(LeanTweenType.easeInOutQuad); // Reset rotation to 0
+                        LeanTween.rotateZ(drawnCard.gameObject, 0, 0.2f).setEase(LeanTweenType.easeInOutQuad); // Reset rotation to 0
 
-                    // After animation, remove card from deck and update UI
-                    deck.Remove(drawnCard);
+                        // After animation, remove card from deck and update UI
+                        deck.Remove(drawnCard);
                         deckCardAmountText.text = deck.Count.ToString();
 
                         if (!CheckWin(playerCards, "Player"))
@@ -573,7 +448,8 @@ public class SikuThiaGameController : MonoBehaviour
                             //{
                             //    StartCoroutine(OutOfDeck());
                             //}
-                        };
+                        }
+                        ;
                     });
             });
 
@@ -590,9 +466,11 @@ public class SikuThiaGameController : MonoBehaviour
     }
 
 
-    public void PlayerEatCardButton() {
+    public void PlayerEatCardButton()
+    {
 
-        if(dropCard != null) {
+        if (dropCard != null)
+        {
             AudioController.Instance.PlaySFX("eat");
             dropButton.interactable = true;
             drawnButton.interactable = eatButton.interactable = false;
@@ -625,7 +503,7 @@ public class SikuThiaGameController : MonoBehaviour
 
     void PlayerCardShortPosition(List<Card> hand)
     {
-       
+
         var usedCards = new HashSet<int>();
         var unpairedCards = new List<Card>();
         var newPlayerCard = new List<Card>();
@@ -667,7 +545,7 @@ public class SikuThiaGameController : MonoBehaviour
             print($"new - [{c.name}]");
         });
         // ggggg
-       
+
         for (int i = 0; i < newPlayerCard.Count; i++)
         {
             LeanTween.moveLocal(newPlayerCard[i].gameObject,
@@ -704,8 +582,8 @@ public class SikuThiaGameController : MonoBehaviour
         if (deck.Count <= 0)
         {
             //PlayAgai();
-            
-           
+
+
             yield return OutOfDeck();
 
         }
@@ -751,10 +629,11 @@ public class SikuThiaGameController : MonoBehaviour
             }
 
         }
-        
+
     }
 
-    IEnumerator OutOfDeck() {
+    IEnumerator OutOfDeck()
+    {
         yield return new WaitForSeconds(0.5f);
         gameStateText.text = "Drawn!";
         for (int v = 0; v < aiCards.Count; v++)
@@ -813,7 +692,7 @@ public class SikuThiaGameController : MonoBehaviour
 
         cardDrop.transform.SetParent(dropPlace.transform, true);
         LeanTween.moveLocal(cardDrop,
-                  
+
                     Vector3.zero
                     , 0.3f)
                     .setFrom(new Vector3(
@@ -825,7 +704,7 @@ public class SikuThiaGameController : MonoBehaviour
 
 
         aiCards.Remove(dropCard);
-        StartCoroutine(FlipCard(cardDrop.gameObject,false));
+        StartCoroutine(FlipCard(cardDrop.gameObject, false));
         this.dropCard = dropCard;
         AiCardShortPosition(aiCards);
         gameStateText.text = "YOUR TURN !";
@@ -914,21 +793,21 @@ public class SikuThiaGameController : MonoBehaviour
                     .setOnComplete(() =>
                     {
                         LeanTween.scale(drawnCard.gameObject, Vector3.one, 0.2f).setEase(LeanTweenType.easeInQuad); // Return to original scale
-                    LeanTween.rotateZ(drawnCard.gameObject, 0, 0.2f).setEase(LeanTweenType.easeInOutQuad); // Reset rotation to 0
+                        LeanTween.rotateZ(drawnCard.gameObject, 0, 0.2f).setEase(LeanTweenType.easeInOutQuad); // Reset rotation to 0
 
-                    // After animation, remove card from deck and update UI
-                    deck.Remove(drawnCard);
+                        // After animation, remove card from deck and update UI
+                        deck.Remove(drawnCard);
                         deckCardAmountText.text = deck.Count.ToString();
 
                         if (!CheckWin(aiCards, "AI"))
                         {
-                            
+
                             if (deck.Count <= 0)
                             {
                                 StartCoroutine(OutOfDeck());
                             }
                         }
-                       
+
                     });
             });
 
@@ -994,7 +873,7 @@ public class SikuThiaGameController : MonoBehaviour
             newPlayerCard[i].gameObject.transform.SetSiblingIndex(i);
 
         }
-       
+
         newPlayerCard.Clear();
     }
 
@@ -1003,7 +882,7 @@ public class SikuThiaGameController : MonoBehaviour
 
     // ############################### Condition
 
-    IEnumerator FlipCard(GameObject card,bool isFlip)
+    IEnumerator FlipCard(GameObject card, bool isFlip)
     {
         LeanTween.scaleX(card, 0f, 0.3f).setEase(LeanTweenType.easeInOutQuad);
         yield return new WaitForSeconds(0.2f);
@@ -1013,7 +892,7 @@ public class SikuThiaGameController : MonoBehaviour
         LeanTween.scaleX(card, 1f, 0.3f).setEase(LeanTweenType.easeInOutQuad);
     }
 
-    
+
     void CheckForPairs(List<Card> hand, string playerName)
     {
         List<Card> checkedCards = new List<Card>();
@@ -1036,7 +915,7 @@ public class SikuThiaGameController : MonoBehaviour
 
         if (checkedCards.Count == 0)
         {
-           // Debug.Log($"{playerName} found no pairs.");
+            // Debug.Log($"{playerName} found no pairs.");
         }
     }
 
@@ -1100,7 +979,7 @@ public class SikuThiaGameController : MonoBehaviour
                 }
             }
         }
-        print($"pairt = { pairCount}");
+        print($"pairt = {pairCount}");
         if (pairCount == 4)
         {
             for (int v = 0; v < aiCards.Count; v++)
@@ -1193,26 +1072,19 @@ public class SikuThiaGameController : MonoBehaviour
 
                     break;
             }
+            AuthInitialization.SaveCoins(coin);
             PlayerPrefs.SetInt("c", coin);
+
             PlayerPrefs.SetInt("p", playerWinCount);
             PlayerPrefs.SetInt("a", aiWinCount);
             UpdateTextUi();
             StartCoroutine(ResetGameState());
-            //gameStateText.text = who + "win";
+
         }
 
-        //if(allBlack == 8)
-        //{
-        //    return true;
-        //}
-        //else if(allRed == 8)
-        //{
-        //    return true;
-        //}
-        //else
-        //{
+
         return pairCount == 4;
-        //}
+
 
     }
 
@@ -1223,7 +1095,7 @@ public class SikuThiaGameController : MonoBehaviour
 
     IEnumerator ResetGameState()
     {
-      
+
         yield return new WaitForSeconds(3f);
         gameStateText.text = "new round in 3s . . .";
         endPanel.SetActive(true);
@@ -1239,7 +1111,7 @@ public class SikuThiaGameController : MonoBehaviour
             Destroy(deckPlace.transform.GetChild(i).gameObject);
         }
 
-        playerCardDrop = dropCard =null;
+        playerCardDrop = dropCard = null;
         yield return new WaitForSeconds(3f);
         endPanel.SetActive(false);
         isAiWin = false;

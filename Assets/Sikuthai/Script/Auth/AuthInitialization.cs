@@ -4,13 +4,15 @@ using System.Threading.Tasks;
 using Unity.Services.Authentication;
 using Unity.Services.CloudSave;
 using Unity.Services.Core;
+
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AuthInitialization : MonoBehaviour
 {
 
-    public GameObject registerPanel;
+    public GameObject registerPanel, loginPanel;
     public InputField usernameSingUpInput;
     public InputField passwordSignUpInput;
     public InputField usernameLoginInput;
@@ -30,7 +32,6 @@ public class AuthInitialization : MonoBehaviour
         }
         await SignInCachedUserAsync();
         //SetupEvents();
-        LoadCoins();
 
     }
 
@@ -49,6 +50,9 @@ public class AuthInitialization : MonoBehaviour
             await AuthenticationService.Instance.SignInAnonymouslyAsync();
             Debug.Log($"PlayerID: {AuthenticationService.Instance.PlayerId}");
             Debug.Log($"PlayerName: {AuthenticationService.Instance.PlayerInfo.Username}");
+            string facebookId = AuthenticationService.Instance.PlayerInfo.GetFacebookId();
+            Debug.Log($"PlayerName: {AuthenticationService.Instance.PlayerInfo.GetFacebookId()}");
+            Debug.Log($"facebookId: {facebookId}");
             string name = AuthenticationService.Instance.PlayerInfo.Username;
             int coin = await LoadCoins();
             TextUpdate(name, coin);
@@ -120,8 +124,11 @@ public class AuthInitialization : MonoBehaviour
             statusText.text = "Registration successful!";
             Debug.Log("User registered with username (email): " + username);
             SaveCoins(500);
+            await Task.Delay(1000);
             int coin = await LoadCoins();
-            TextUpdate(username, coin); s
+            TextUpdate(username, coin);
+            await Task.Delay(1000);
+            registerPanel.SetActive(false);
         }
         catch (AuthenticationException e)
         {
@@ -144,11 +151,16 @@ public class AuthInitialization : MonoBehaviour
 
         try
         {
-
-            string email = username + "@example.com"; // Add a domain to make it a valid email
-            await AuthenticationService.Instance.SignInWithUsernamePasswordAsync(email, password);
+            await AuthenticationService.Instance.SignInWithUsernamePasswordAsync(username, password);
             statusText.text = "Login successful!";
             Debug.Log("User logged in: " + AuthenticationService.Instance.PlayerId);
+            if (AuthenticationService.Instance.PlayerId != null)
+            {
+                int coin = await LoadCoins();
+                TextUpdate(username, coin);
+                await Task.Delay(1000);
+                loginPanel.SetActive(false);
+            }
         }
         catch (AuthenticationException e)
         {
@@ -162,12 +174,13 @@ public class AuthInitialization : MonoBehaviour
     {
         AuthenticationService.Instance.SignOut(true);
         statusText.text = "User signed out.";
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Debug.Log("User logged out.");
     }
 
 
 
-    public async void SaveCoins(int coins)
+    public static async void SaveCoins(int coins)
     {
         try
         {
@@ -185,7 +198,7 @@ public class AuthInitialization : MonoBehaviour
     }
 
 
-    public async Task<int> LoadCoins()
+    public static async Task<int> LoadCoins()
     {
         var playerData = await CloudSaveService.Instance.Data.Player.LoadAsync(new HashSet<string> { "userCoins" });
         if (playerData.TryGetValue("userCoins", out var keyName))
@@ -194,6 +207,23 @@ public class AuthInitialization : MonoBehaviour
             return keyName.Value.GetAs<int>();
         }
         return 0;
+    }
+
+
+
+    public void LaunchGame()
+    {
+        if (AuthenticationService.Instance.PlayerId == null)
+        {
+            statusText.text = "Please login first.";
+            loginPanel.SetActive(true);
+            return;
+        }
+        else
+        {
+            SceneManager.LoadScene("SikuThai");
+        }
+
     }
 
 
